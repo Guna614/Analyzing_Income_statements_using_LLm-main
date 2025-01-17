@@ -5,6 +5,7 @@ PDF Table Extraction & Summarization
 Project Overview
 This project leverages cutting-edge technology LLM(Mistral-7B-Instruct-v0.2 model) from Hugging Face(using this llm because its for free of use) to simplify the complex process of analyzing financial documents such as income statements and balance sheets. The solution provides a comprehensive, AI-driven approach to extracting key financial insights, delivering human-readable summaries, and enabling faster, more informed decision-making for businesses and investors.
 
+
 Through collaborative efforts, my team and I successfully streamlined the analysis of complex financial documents, overcoming challenges such as scalability, precision in data extraction, and real-time processing. This project is a testament to the transformative potential of AI in financial analytics.
 
 ✨ Key Features of the Project
@@ -37,50 +38,39 @@ Ensure compliance with financial data privacy standards to keep your information
 1️⃣ Clone the Repository
 Clone the project repository to your local machine:
 
-bash
-Copy
-Edit
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 2️⃣ Set Up a Virtual Environment (Recommended)
 Create and activate a virtual environment to manage dependencies:
 
-bash
-Copy
-Edit
+
 # Create a virtual environment
 python -m venv venv
 
 # Activate the virtual environment
 # On Windows:
 venv\Scripts\activate
+
 # On macOS/Linux:
 source venv/bin/activate
+
 3️⃣ Install Dependencies
 Install the required Python libraries using the requirements.txt file:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 4️⃣ Set Up the Mistral-7B-Instruct-v0.2 Model
-Download the Model:
 
+Download the Model:
 Obtain the Mistral-7B-Instruct-v0.2 model from the official source or Hugging Face repository.
 Place the downloaded model files in a directory, e.g., models/mistral-7b.
-Install Necessary Model Libraries:
-Ensure you have the required libraries for working with the model (e.g., transformers, accelerate):
 
-bash
-Copy
-Edit
+Install Necessary Model Libraries:
+
+Ensure you have the required libraries for working with the model (e.g., transformers, accelerate):
 pip install transformers accelerate
+
 Configure the Model:
 Update the configuration in your script to load the Mistral-7B-Instruct-v0.2 model:
-
-python
-Copy
-Edit
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 model_name = "path/to/mistral-7b"
@@ -88,17 +78,11 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForCausalLM.from_pretrained(model_name)
 5️⃣ Run the Application
 Launch the application locally:
-
-bash
-Copy
-Edit
 python main.py
+
 6️⃣ Access the Application
 Open your browser and navigate to:
 
-plaintext
-Copy
-Edit
 http://localhost:5000
 or the specified URL to interact with the user interface.
 
@@ -109,9 +93,6 @@ To start using the application, follow these steps:
 🖥️ Launch the Application
 Run the Streamlit app with the following command in your terminal:
 
-bash
-Copy
-Edit
 streamlit run app.py
 This will open the application in your default web browser.
 
@@ -133,10 +114,9 @@ Analyze the summaries to quickly understand the financial performance indicators
 Export or save the summarized results as needed.
 
 
+
 Project Structure
-bash
-Copy
-Edit
+
 pdf-table-extraction/  
 ├── app.py                 # Main Streamlit application file  
 ├── requirements.txt       # List of all project dependencies  
@@ -193,16 +173,10 @@ pip install tqdm
 Requests (Optional)
 
 For handling HTTP requests if external APIs are involved.
-bash
-Copy
-Edit
 pip install requests
+
 How to Install
 Create a requirements.txt file with the following content:
-
-plaintext
-Copy
-Edit
 streamlit
 transformers
 accelerate
